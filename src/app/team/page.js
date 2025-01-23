@@ -13,7 +13,7 @@ const teamMembers = [
     },
     {
         name: 'James Lin',
-        description: 'User Design Experience',
+        description: 'Computer Vision and User Experience Design',
         image: '/images/james.jpeg',
     },
     {
@@ -31,7 +31,11 @@ const teamMembers = [
         description: 'Computer Science Major - ASL-Centric User Interfaces',
         image: '/images/natalie.jpg',
     },
-
+    {
+        name: 'Kshitij Agarwal ',
+        description: 'Brain-Computer Interfaces & Computer Vision ',
+        image: '/images/Kshitij.jpeg',
+    }
 ];
 export default function Team() {
     return (
