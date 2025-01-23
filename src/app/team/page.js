@@ -14,7 +14,7 @@ const teamMembers = [
     {
         name: 'James Lin',
         description: 'User Design Experience',
-        image: '/images/james.jpg',
+        image: '/images/james.jpeg',
     },
     {
         name: 'Ramissa Khan',
@@ -36,7 +36,7 @@ const teamMembers = [
 export default function Team() {
     return (
         <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-            <h1 style={{ textAlign: 'center', fontSize: '3rem', fontWeight: 'bold' }}>Meet the Team</h1>
+            <h1 style={{ textAlign: 'center', fontSize: '3rem', fontWeight: 'bold' }}>Meet Our Team</h1>
             <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
                 {teamMembers.map((member, index) => (
                     <div key={index} style={{
@@ -53,7 +53,7 @@ export default function Team() {
                                 alt={`${member.name}'s picture`}
                                 width={200}
                                 height={200}
-                                style={{ objectFit: 'cover' }}
+                                style={{ objectFit: 'contain' }} // Changed to 'contain'
                             />
                         </div>
                         <h3 style={{ margin: '10px 0' }}>{member.name}</h3>
