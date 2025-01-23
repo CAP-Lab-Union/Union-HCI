@@ -15,14 +15,12 @@ const Header = () => {
     { name: 'Contact', href: '/contact' },
   ];
 
-
   const toggleDarkMode = () => {
     const newDarkMode = !isDarkMode;
     setIsDarkMode(newDarkMode);
     localStorage.setItem('theme', newDarkMode ? 'dark' : 'light');
     document.documentElement.classList.toggle('dark', newDarkMode);
   };
-
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
@@ -35,14 +33,19 @@ const Header = () => {
     }
   }, []);
 
-  // TODO: Really bad way to handle this, need to refactor.
   return (
     <header className={`sticky top-0 z-50 ${isDarkMode ? 'header-blur-dark' : 'header-blur-light'}`}>
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
-        <div className="flex h-20 items-center justify-between">
+        {/* TODO: Edit height of the navbar here */}
+        <div className="flex h-24 items-center justify-between">
           <div className="flex items-center">
-            <Link href="/" className="text-2xl font-bold text-primary">
-              CAP Lab
+            <Link href="/" className="flex items-center space-x-2">
+              <div className="flex flex-col">
+                <span className="text-2xl font-bold text-primary">CAP Lab</span>
+                <span className="text-sm font-normal text-muted-foreground">
+                  Computer and People LAB
+                </span>
+              </div>
             </Link>
           </div>
 
@@ -56,12 +59,10 @@ const Header = () => {
               >
                 {item.name}
               </Link>
-            ))}
-
-            {/* Theme Toggle Button */}
+            ))} 
             <button
               onClick={toggleDarkMode}
-              className="text-primary hover:text-muted-foreground  transition-colors"
+              className="text-primary hover:text-muted-foreground transition-colors"
             >
               {isDarkMode ? <Sun size={24} /> : <Moon size={24} />}
             </button>

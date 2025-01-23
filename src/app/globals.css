@@ -41,6 +41,7 @@
     --border: 0 0% 89.8%; /* Light theme border color */
     --input: 0 0% 89.8%; /* Light theme input background */
     --ring: 0 0% 3.9%; /* Light theme focus ring */
+
     --chart-1: 12 76% 61%; /* Chart colors for light theme */
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;
@@ -71,6 +72,7 @@
     --border: 240 4% 16%; /* Dark theme border color */
     --input: 240 4% 16%; /* Dark theme input background */
     --ring: 240 5% 65%; /* Dark theme focus ring */
+    
     --chart-1: 220 70% 50%; /* Chart colors for dark theme */
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
