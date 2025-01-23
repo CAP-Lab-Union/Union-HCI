@@ -4,7 +4,7 @@ const teamMembers = [
   {
     name: 'Shruti Mahajan',
     role: 'Professor',
-    image: '',
+    image: '/team/Shruti.jpeg',
     description: "Mary H. '80 and Richard K. Templeton '80 Assistant Professor of Computer Science",
   },
   {
@@ -42,6 +42,12 @@ const teamMembers = [
     role: 'Research Assistant',
     image: '/team/Natalie.jpeg',
     description: 'Computer Science Major - ASL-Centric User Interfaces',
+  },
+  {
+    name: 'Ayanat Zhumagaliyeva',
+    role: 'Research Assistant',
+    image: '/team/ayanat.jpg',
+    description: 'Augmented Reality, 3D modeling',
   }
 ];
 
@@ -52,7 +58,7 @@ export default function TeamPage() {
       <div className="text-center mb-16">
         <h1 className="text-4xl font-bold text-primary mb-4">Our Team</h1>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-          Meet our team from different backgrounds and expertise.
+          The tiamse oasmdoasmd oasmd oasd 
         </p>
       </div>
 
