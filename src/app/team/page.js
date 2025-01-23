@@ -5,7 +5,7 @@ const teamMembers = [
     name: 'Shruti Mahajan',
     role: 'Professor',
     image: '',
-    description: '',
+    description: "Mary H. '80 and Richard K. Templeton '80 Assistant Professor of Computer Science",
   },
   {
     name: 'James Lin',
