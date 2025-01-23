@@ -5,7 +5,13 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
+  
+  
+  --footer: #111827;
+  --footertext:   #ffffff;
+
+
+} 
 
 @media (prefers-color-scheme: dark) {
   :root {
