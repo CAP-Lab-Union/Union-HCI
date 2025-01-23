@@ -2,42 +2,49 @@ import Image from 'next/image';
 
 const teamMembers = [
   {
-    name: 'test',
-    role: 'test test test',
+    name: 'Shruti Mahajan',
+    role: 'Professor',
     image: '',
-    description: 'test test',
+    description: '',
   },
   {
-    name: 'test test',
-    role: 'testtesttesttesttest',
-    image: '',
-    description: 'testtesttesttesttesttest',
+    name: 'James Lin',
+    role: 'Research Assistant',
+    image: '/team/James.jpeg',
+    description: 'Computer Vision and User Experience Design',
   },
   {
-    name: 'test test',
-    role: 'testtesttesttesttest',
-    image: '',
-    description: 'testtesttesttesttesttest',
+    name: 'Victor Wong',
+    role: 'Research Assistant',
+    image: '/team/victor.jpg',
+    description: 'Computer Vision and User Experience Design',
   },
   {
-    name: 'test test',
-    role: 'testtesttesttesttest',
-    image: '',
-    description: 'testtesttesttesttesttest',
+    name: 'Kshitij Agarwal',
+    role: 'Research Assistant',
+    image: '/team/Agarwal.jpeg',
+    description: 'Brain-Computer Interfaces & Computer Vision ',
   },
   {
-    name: 'test test',
-    role: 'testtesttesttesttest',
-    image: '',
-    description: 'testtesttesttesttesttest',
+    name: 'Ramissa Kahn',
+    role: 'Research Assistant',
+    image: '/team/Ramissa.png',
+    description: 'Developing Digital Immersive Experiences for Anxiety Relief through Data Visualization. ',
   },
   {
-    name: 'test test',
-    role: 'testtesttesttesttest',
-    image: '',
-    description: 'testtesttesttesttesttest',
+    name: 'Luodi Wang',
+    role: 'Research Assistant',
+    image: '/team/Luodi.jpg',
+    description: 'Software Developer',
+  },
+  {
+    name: 'Natalie Pinto',
+    role: 'Research Assistant',
+    image: '/team/Natalie.jpeg',
+    description: 'Computer Science Major - ASL-Centric User Interfaces',
   }
 ];
+
 
 export default function TeamPage() {
   return (
@@ -45,7 +52,7 @@ export default function TeamPage() {
       <div className="text-center mb-16">
         <h1 className="text-4xl font-bold text-primary mb-4">Our Team</h1>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-          Meet our team from different 
+          Meet our team from different backgrounds and expertise.
         </p>
       </div>
 
@@ -53,35 +60,40 @@ export default function TeamPage() {
         {teamMembers.map((member) => (
           <div 
             key={member.name}
-            className="bg-card border border-border rounded-lg overflow-hidden transition-transform hover:scale-[1.02] duration-300"
+            className="bg-card/70 border border-border rounded-lg overflow-hidden transition-transform hover:scale-[1.02] duration-300 flex flex-col h-[550px]" // Increased height and flex layout
           >
-            <div className="relative h-64 w-full">
+            <div className="relative h-96 w-full"> 
               <Image
                 src={member.image}
                 alt={member.name}
                 fill
                 className="object-cover"
+                style={{ objectPosition: '50% 30%' }} 
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
-            <div className="p-6">
+            <div className="p-6 flex flex-col flex-grow">
               <h3 className="text-xl font-semibold text-primary mb-1">{member.name}</h3>
               <p className="text-muted-foreground mb-4">{member.role}</p>
-              <p className="text-card-foreground">{member.description}</p>
+              <p className="text-card-foreground overflow-y-auto flex-grow"> 
+                {member.description}
+              </p>
             </div>
           </div>
         ))}
       </div>
-
-      {/* <div className="mt-16 text-center">
+      <div className="mt-16 text-center">
         <h2 className="text-2xl font-bold text-primary mb-4">Join Our Team</h2>
-        <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
-       asdasdasd asd asd asd asd asd 
-        </p>
+          <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
+          Email: 
+          </p>
         <button className="bg-primary text-primary-foreground px-8 py-3 rounded-md hover:opacity-90 transition-opacity">
-          View Open Positions
+          Contact
         </button>
-      </div> */}
+      </div>
     </div>
   );
 }
+
+
+
