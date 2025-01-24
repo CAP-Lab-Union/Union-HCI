@@ -40,12 +40,20 @@ const Header = () => {
         <div className="flex h-24 items-center justify-between">
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
-              <div className="flex flex-col">
-                <span className="text-2xl font-bold text-primary">CAP Lab</span>
-                <span className="text-sm font-normal text-muted-foreground">
-                  Computer and People
-                </span>
+              <div className="flex items-center space-x-4">
+                <img
+                  src="/cap_logo.jpg"
+                  alt="Cap Logo"
+                  className="h-16 w-16 object-contain rounded-full"
+                />
+                <div className="flex flex-col">
+                  <span className="text-2xl font-bold text-primary">CAP Lab</span>
+                  <span className="text-sm font-normal text-muted-foreground">
+                    Computer and People
+                  </span>
+                </div>
               </div>
+
             </Link>
           </div>
 
@@ -59,7 +67,7 @@ const Header = () => {
               >
                 {item.name}
               </Link>
-            ))} 
+            ))}
             <button
               onClick={toggleDarkMode}
               className="text-primary hover:text-muted-foreground transition-colors"
