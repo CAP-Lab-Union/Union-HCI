@@ -11,7 +11,7 @@ To get started with the development of the research website, follow these steps:
    First, clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/JamessLin/Union-HCI.git
+   git clone https://github.com/CAP-Lab-Union/Union-HCI.git
     ```
 
 2. **Navigate to the project directory:**
