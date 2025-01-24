@@ -43,7 +43,7 @@ const Header = () => {
               <div className="flex flex-col">
                 <span className="text-2xl font-bold text-primary">CAP Lab</span>
                 <span className="text-sm font-normal text-muted-foreground">
-                  Computer and People LAB
+                  Computer and People
                 </span>
               </div>
             </Link>
