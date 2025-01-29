@@ -27,13 +27,14 @@ export default function Home() {
             speed={200}
             wrapper="span"
             repeat={Infinity}
-            className="text-2xl sm:text-3xl text-blue-400 font-semibold"
+            style={{ color: '#3994B2' }}
+            className="text-2xl sm:text-3xl font-semibold"
           />
         </div>
       </div>
 
       {/* About Us Section */}
-      <section className="py-16 px-4 bg-gray-100">
+      <section className="py-16 px-4" style={{ backgroundColor: '#A0C8D' }}>
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-3xl sm:text-4xl font-semibold mb-4 text-gray-800">
             About Us
