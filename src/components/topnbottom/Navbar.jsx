@@ -42,7 +42,7 @@ const Header = () => {
             <Link href="/" className="flex items-center space-x-2">
               <div className="flex items-center space-x-4">
                 <img
-                  src="/cap_logo.jpg"
+                  src="/Union-HCI/cap_logo.jpg"
                   alt="Cap Logo"
                   className="h-16 w-16 object-contain rounded-full"
                 />
