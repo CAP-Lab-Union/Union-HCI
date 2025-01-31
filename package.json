@@ -1,24 +1,26 @@
 {
   "name": "union-hci",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/CAP-Lab-Union/Union-HCI",
-  "dependencies": {
-    "next": "12.0.7",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "lucide-react": "^0.14.0",
-    "typewriter-effect": "^2.18.1"
-  },
-  "devDependencies": {
-    "gh-pages": "^3.2.3"
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export",
-    "predeploy": "npm run build && npm run export",
-    "deploy": "gh-pages -d out"
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "lucide-react": "^0.473.0",
+    "next": "15.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-type-animation": "^3.2.0",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.6",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
   }
 }
