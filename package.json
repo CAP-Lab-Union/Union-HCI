@@ -2,7 +2,7 @@
   "name": "union-hci",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://<username>.github.io/<repository-name>",
+  "homepage": "https://github.com/CAP-Lab-Union/Union-HCI",
   "dependencies": {
     "next": "12.0.7",
     "react": "17.0.2",
