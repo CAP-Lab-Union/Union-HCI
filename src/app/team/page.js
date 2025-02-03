@@ -4,7 +4,7 @@ const teamMembers = [
   {
     name: 'Shruti Mahajan',
     role: 'Professor',
-    image: '/team/Shruti.jpeg',
+    image: '/team/shruti.jpeg',
     description: "Mary H. '80 and Richard K. Templeton '80 Assistant Professor of Computer Science",
     info: 'More info'
   },
@@ -39,7 +39,7 @@ const teamMembers = [
   {
     name: 'Luodi Wang',
     role: 'Research Assistant',
-    image: '/team/Luodi.jpg',
+    image: '/team/luodi.jpg',
     description: 'Software Developer',
     info: 'More info'
   },
