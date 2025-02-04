@@ -1,10 +1,12 @@
+'use client'
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 const teamMembers = [
   {
     name: 'Shruti Mahajan',
     role: 'Assistant  Professor',
-    image: '/team/Shruti.jpeg',
+    image: '/team/shruti.jpeg',
     description: "Mary H. '80 and Richard K. Templeton '80 Assistant Professor of Computer Science",
   },
   {
@@ -34,7 +36,7 @@ const teamMembers = [
   {
     name: 'Luodi Wang',
     role: 'Research Assistant',
-    image: '/team/Luodi.jpg',
+    image: '/team/luodi.jpg',
     description: 'Software Developer',
   },
   {
@@ -53,6 +55,12 @@ const teamMembers = [
 
 
 export default function TeamPage() {
+  const router = useRouter();
+
+  const handleContactClick = () => {
+    router.push('/contact');
+  };
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="text-center mb-16">
@@ -89,9 +97,12 @@ export default function TeamPage() {
       <div className="mt-16 text-center">
         <h2 className="text-2xl font-bold text-primary mb-4">Join Our Team</h2>
         <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
-          Email:
+          Email: hci_research@union.edu
         </p>
-        <button className="bg-primary text-primary-foreground px-8 py-3 rounded-md hover:opacity-90 transition-opacity">
+        <button
+          onClick={handleContactClick}
+          className="bg-primary text-primary-foreground px-8 py-3 rounded-md hover:opacity-90 transition-opacity"
+        >
           Contact
         </button>
       </div>

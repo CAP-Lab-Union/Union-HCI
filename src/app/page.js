@@ -23,8 +23,8 @@ export default function Home() {
             Computer and People Lab
           </h1>
           <div className="flex items-center space-x-2">
-            <h1 className="text-2xl sm:text-3xl text-white  font-bold">
-              Who We Are:
+            <h1 className="text-2xl sm:text-3xl text-white font-bold">
+              Who We Are
             </h1>
             <TypeAnimation
               sequence={['Innovators', 1000, 'Researchers', 1000, 'Designers', 1000]}
