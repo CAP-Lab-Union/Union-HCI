@@ -20,21 +20,17 @@ export default function Home() {
         {/* Text overlay */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center bg-black bg-opacity-50">
           <h1 className="text-4xl sm:text-6xl text-white font-bold mb-4">
-            Computer and People Lab
+            Who We Are
           </h1>
-          <div className="flex items-center space-x-2">
-            <h1 className="text-2xl sm:text-3xl text-white font-bold">
-              Who We Are
-            </h1>
-            <TypeAnimation
-              sequence={['Innovators', 1000, 'Researchers', 1000, 'Designers', 1000]}
-              speed={200}
-              wrapper="span"
-              repeat={Infinity}
-              style={{ color: '#3994B2' }}
-              className="text-2xl sm:text-3xl font-semibold"
-            />
-          </div>
+          {/* This is the typing animation */}
+          <TypeAnimation
+            sequence={['Innovators', 1000, 'Researchers', 1000, 'Designers', 1000]}
+            speed={200}
+            wrapper="span"
+            repeat={Infinity}
+            style={{ color: '#3994B2' }}
+            className="text-2xl sm:text-3xl font-semibold"
+          />
         </div>
       </div>
 

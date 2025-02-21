@@ -1,4 +1,5 @@
 # Union-HCI Research Website
+This is the official website of the Union College Computer and People(CAP) Lab
 
 For those who are working on this website with me. Please follow the steps below
 
@@ -26,3 +27,4 @@ To get started with the development of the research website, follow these steps:
     npm install
     npm run dev
     ```
+3. **Open Localhost**

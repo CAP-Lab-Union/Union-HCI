@@ -1,6 +1,6 @@
 'use client'
 import { useState, useEffect } from "react";
-
+//To add another project, copy paste the existing one and change the values.
 const projects = [
     {
         title: 'Gesture Recognition for Sports Analysis with Large Screens',
@@ -49,13 +49,15 @@ export default function Carousel() {
             <h1 className="text-3xl font-bold mb-5">Current Projects</h1>
             <div className="relative w-3/4 h-3/4 border-2 border-gray-300 rounded-lg">
                 <div className="relative h-full overflow-hidden rounded-lg">
+                    {/* In order to dispay the array contents, we use map */}
                     {projects.map((project, index) => (
                         <div
                             key={index}
+                            // styles from tailwind and making it look nice
                             className={`absolute block w-full h-full top-0 left-0 transform transition-transform duration-700 ease-in-out ${activeIndex === index ? "translate-x-0" : "translate-x-full"
                                 }`}
                             style={{
-                                border: '1px solid #A0C8D6', // Match border color with background color
+                                border: '1px solid #A0C8D6', //Color that we chose as the border color
                                 borderRadius: '10px',
                                 padding: '40px',
                                 textAlign: 'center',
@@ -65,9 +67,9 @@ export default function Carousel() {
                                 display: 'flex',
                                 flexDirection: 'column',
                                 alignItems: 'center',
-                                justifyContent: 'center', // Center content vertically
-                                paddingLeft: '60px', // Add padding to avoid overlap with arrows
-                                paddingRight: '60px' // Add padding to avoid overlap with arrows
+                                justifyContent: 'center',
+                                paddingLeft: '60px',
+                                paddingRight: '60px'
                             }}
                         >
                             <h2 style={{ fontSize: '1.5rem', marginBottom: '10px' }}>{project.title}</h2>

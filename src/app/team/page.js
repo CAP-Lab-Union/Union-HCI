@@ -3,6 +3,9 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
 const teamMembers = [
+  // List of team members with name, role, image, and description
+  // To add a new member to the team, just add another object to the array
+  //I recommend copy pasting the already existing ones and then changing the values. 
   {
     name: 'Shruti Mahajan',
     role: 'Assistant  Professor',
@@ -57,6 +60,7 @@ const teamMembers = [
 export default function TeamPage() {
   const router = useRouter();
 
+  // Function to navigate to the Team page
   const handleContactClick = () => {
     router.push('/contact');
   };
@@ -65,7 +69,6 @@ export default function TeamPage() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="text-center mb-16">
         <h1 className="text-4xl font-bold text-primary mb-4">Meet Our Team</h1>
-
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -74,6 +77,7 @@ export default function TeamPage() {
             key={member.name}
             className="bg-card/70 border border-border rounded-lg overflow-hidden transition-transform hover:scale-[1.02] duration-300 flex flex-col h-[550px]" // Increased height and flex layout
           >
+            {/* div for image */}
             <div className="relative h-96 w-full">
               <Image
                 src={member.image}
@@ -84,6 +88,7 @@ export default function TeamPage() {
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
+            {/* Div for part under */}
             <div className="p-6 flex flex-col flex-grow">
               <h3 className="text-xl font-semibold text-primary mb-1">{member.name}</h3>
               <p className="text-muted-foreground mb-4">{member.role}</p>
