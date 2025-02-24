@@ -1,64 +1,60 @@
-'use client'
-import Image from 'next/image';
+'use client';
 import { useRouter } from 'next/navigation';
 
 const teamMembers = [
-  // List of team members with name, role, image, and description
-  // To add a new member to the team, just add another object to the array
-  //I recommend copy pasting the already existing ones and then changing the values. 
   {
     name: 'Shruti Mahajan',
-    role: 'Assistant  Professor',
-    image: 'Union-HCI/team/shruti.jpeg',
+    role: 'Assistant Professor',
+    image: '/team/shruti.jpeg',
     description: "Mary H. '80 and Richard K. Templeton '80 Assistant Professor of Computer Science",
   },
   {
     name: 'James Lin',
     role: 'Research Assistant',
-    image: 'Union-HCI/team/James.jpeg',
+    image: '/team/James.jpeg',
     description: 'Computer Vision and User Experience Design',
   },
   {
     name: 'Victor Wong',
     role: 'Research Assistant',
-    image: 'Union-HCI/team/victor.jpg',
+    image: '/team/victor.jpg',
     description: 'Computer Vision and User Experience Design',
   },
   {
     name: 'Kshitij Agarwal',
     role: 'Research Assistant',
-    image: 'Union-HCI/team/Agarwal.jpeg',
-    description: 'Brain-Computer Interfaces & Computer Vision ',
+    image: '/team/Agarwal.jpeg',
+    description: 'Brain-Computer Interfaces & Computer Vision',
   },
   {
     name: 'Ramissa Kahn',
     role: 'Research Assistant',
-    image: 'Union-HCI/team/Ramissa.png',
-    description: 'Developing Digital Immersive Experiences for Anxiety Relief through Data Visualization. ',
+    image: '/team/Ramissa.png',
+    description: 'Developing Digital Immersive Experiences for Anxiety Relief through Data Visualization.',
   },
   {
     name: 'Luodi Wang',
     role: 'Research Assistant',
-    image: 'Union-HCI/team/luodi.jpg',
+    image: '/team/luodi.jpg',
     description: 'Software Developer',
   },
   {
     name: 'Natalie Pinto',
     role: 'Research Assistant',
-    image: 'Union-HCI/team/Natalie.jpeg',
+    image: '/team/Natalie.jpeg',
     description: 'Computer Science Major - ASL-Centric User Interfaces',
   },
   {
     name: 'Ayanat Zhumagaliyeva',
     role: 'Research Assistant',
-    image: 'Union-HCI/team/ayanat.jpg',
+    image: '/team/ayanat.jpg',
     description: 'Augmented Reality, 3D modeling',
-  }
+  },
 ];
-
 
 export default function TeamPage() {
   const router = useRouter();
+  const basePath = process.env.NODE_ENV === 'production' ? '/Union-HCI' : '';
 
   // Function to navigate to the Team page
   const handleContactClick = () => {
@@ -75,17 +71,15 @@ export default function TeamPage() {
         {teamMembers.map((member) => (
           <div
             key={member.name}
-            className="bg-card/70 border border-border rounded-lg overflow-hidden transition-transform hover:scale-[1.02] duration-300 flex flex-col h-[550px]" // Increased height and flex layout
+            className="bg-card/70 border border-border rounded-lg overflow-hidden transition-transform hover:scale-[1.02] duration-300 flex flex-col h-[550px]"
           >
             {/* div for image */}
             <div className="relative h-96 w-full">
-              <Image
-                src={member.image}
+              <img
+                src={`${basePath}${member.image}`} //Image path
                 alt={member.name}
-                fill
-                className="object-cover"
+                className="object-cover w-full h-full"
                 style={{ objectPosition: '50% 30%' }}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             {/* Div for part under */}
@@ -114,6 +108,3 @@ export default function TeamPage() {
     </div>
   );
 }
-
-
-
