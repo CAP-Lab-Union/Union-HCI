@@ -9,49 +9,49 @@ const teamMembers = [
   {
     name: 'Shruti Mahajan',
     role: 'Assistant  Professor',
-    image: '/team/shruti.jpeg',
+    image: 'Union-HCI/team/shruti.jpeg',
     description: "Mary H. '80 and Richard K. Templeton '80 Assistant Professor of Computer Science",
   },
   {
     name: 'James Lin',
     role: 'Research Assistant',
-    image: '/team/James.jpeg',
+    image: 'Union-HCI/team/James.jpeg',
     description: 'Computer Vision and User Experience Design',
   },
   {
     name: 'Victor Wong',
     role: 'Research Assistant',
-    image: '/team/victor.jpg',
+    image: 'Union-HCI/team/victor.jpg',
     description: 'Computer Vision and User Experience Design',
   },
   {
     name: 'Kshitij Agarwal',
     role: 'Research Assistant',
-    image: '/team/Agarwal.jpeg',
+    image: 'Union-HCI/team/Agarwal.jpeg',
     description: 'Brain-Computer Interfaces & Computer Vision ',
   },
   {
     name: 'Ramissa Kahn',
     role: 'Research Assistant',
-    image: '/team/Ramissa.png',
+    image: 'Union-HCI/team/Ramissa.png',
     description: 'Developing Digital Immersive Experiences for Anxiety Relief through Data Visualization. ',
   },
   {
     name: 'Luodi Wang',
     role: 'Research Assistant',
-    image: '/team/luodi.jpg',
+    image: 'Union-HCI/team/luodi.jpg',
     description: 'Software Developer',
   },
   {
     name: 'Natalie Pinto',
     role: 'Research Assistant',
-    image: '/team/Natalie.jpeg',
+    image: 'Union-HCI/team/Natalie.jpeg',
     description: 'Computer Science Major - ASL-Centric User Interfaces',
   },
   {
     name: 'Ayanat Zhumagaliyeva',
     role: 'Research Assistant',
-    image: '/team/ayanat.jpg',
+    image: 'Union-HCI/team/ayanat.jpg',
     description: 'Augmented Reality, 3D modeling',
   }
 ];
