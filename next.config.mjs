@@ -1,12 +1,15 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
-    basePath: process.env.NODE_ENV === 'production' ? '/Union-HCI' : '',
-    assetPrefix: process.env.NODE_ENV === 'production' ? 'https://cap-lab-union.github.io/Union-HCI/' : '',
+    basePath: isProd ? '/Union-HCI' : '',
+    assetPrefix: isProd ? '/Union-HCI' : '',
     output: 'export',
     reactStrictMode: true,
 
     images: {
         unoptimized: true,
+        domain: ['https://union-hci-nlhp.vercel.app/']
     }
 }
 

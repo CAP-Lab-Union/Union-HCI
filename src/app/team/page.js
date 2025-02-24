@@ -1,7 +1,8 @@
 'use client';
 import { useRouter } from 'next/navigation';
-const basePath = process.env.NODE_ENV === 'production' ? '/Union-HCI' : '';
+import Image from 'next/image';
 
+const basePath = process.env.NODE_ENV === 'production' ? '/Union-HCI' : '';
 
 const teamMembers = [
   {
@@ -25,31 +26,31 @@ const teamMembers = [
   {
     name: 'Kshitij Agarwal',
     role: 'Research Assistant',
-    image: '/team/Agarwal.jpeg',
+    image: `${basePath}/team/Agarwal.jpeg`,
     description: 'Brain-Computer Interfaces & Computer Vision',
   },
   {
     name: 'Ramissa Kahn',
     role: 'Research Assistant',
-    image: '/team/Ramissa.png',
+    image: `${basePath}/team/Ramissa.png`,
     description: 'Developing Digital Immersive Experiences for Anxiety Relief through Data Visualization.',
   },
   {
     name: 'Luodi Wang',
     role: 'Research Assistant',
-    image: '/team/luodi.jpg',
+    image: `${basePath}/team/luodi.jpg`,
     description: 'Software Developer',
   },
   {
     name: 'Natalie Pinto',
     role: 'Research Assistant',
-    image: '/team/Natalie.jpeg',
+    image: `${basePath}/team/Natalie.jpeg`,
     description: 'Computer Science Major - ASL-Centric User Interfaces',
   },
   {
     name: 'Ayanat Zhumagaliyeva',
     role: 'Research Assistant',
-    image: '/team/ayanat.jpg',
+    image: `${basePath}/team/ayanat.jpg`,
     description: 'Augmented Reality, 3D modeling',
   },
 ];
@@ -76,11 +77,13 @@ export default function TeamPage() {
           >
             {/* div for image */}
             <div className="relative h-96 w-full">
-              <img
-                src={`${basePath}${member.image}`} //Image path
+              <Image
+                src={member.image} //Image path
                 alt={member.name}
-                className="object-cover w-full h-full"
+                fill
+                className="object-cover"
                 style={{ objectPosition: '50% 30%' }}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             {/* Div for part under */}
