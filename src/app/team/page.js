@@ -1,23 +1,25 @@
 'use client';
 import { useRouter } from 'next/navigation';
+const basePath = process.env.NODE_ENV === 'production' ? '/Union-HCI' : '';
+
 
 const teamMembers = [
   {
     name: 'Shruti Mahajan',
     role: 'Assistant Professor',
-    image: '/team/shruti.jpeg',
+    image: `${basePath}/team/shruti.jpeg`,
     description: "Mary H. '80 and Richard K. Templeton '80 Assistant Professor of Computer Science",
   },
   {
     name: 'James Lin',
     role: 'Research Assistant',
-    image: '/team/James.jpeg',
+    image: `${basePath}/team/James.jpeg`,
     description: 'Computer Vision and User Experience Design',
   },
   {
     name: 'Victor Wong',
     role: 'Research Assistant',
-    image: '/team/victor.jpg',
+    image: `${basePath}/team/victor.jpg`,
     description: 'Computer Vision and User Experience Design',
   },
   {
@@ -54,7 +56,6 @@ const teamMembers = [
 
 export default function TeamPage() {
   const router = useRouter();
-  const basePath = process.env.NODE_ENV === 'production' ? '/Union-HCI' : '';
 
   // Function to navigate to the Team page
   const handleContactClick = () => {
