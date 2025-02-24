@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-        domains: ["https://union-hci.vercel.app/team"],
-    }
-}
+    output: "export",  // <=== enables static exports
+    reactStrictMode: true,
+    basePath: "/Union-HCI",
+};
 
 export default nextConfig;
