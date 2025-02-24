@@ -9,7 +9,7 @@ const nextConfig = {
 
     images: {
         unoptimized: true,
-        domain: ['https://union-hci-nlhp.vercel.app/']
+        domains: ['https://union-hci-nlhp.vercel.app/']
     }
 }
 
