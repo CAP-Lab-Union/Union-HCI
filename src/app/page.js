@@ -3,13 +3,16 @@
 import { TypeAnimation } from 'react-type-animation';
 import Image from 'next/image';
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 export default function Home() {
+
   return (
     <>
       <div className="relative w-full h-[50vh] sm:h-[70vh]">
         {/* Background image */}
         <Image
-          src="/union.jpg"
+          src={`/union.jpg`}
           alt="Who we are"
           layout="fill"
           objectFit="cover"
