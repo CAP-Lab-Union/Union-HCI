@@ -3,7 +3,7 @@
 import { TypeAnimation } from 'react-type-animation';
 import Image from 'next/image';
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+const basePath = process.env.NODE_ENV === 'production' ? '/Union-HCI' : '';
 
 export default function Home() {
 
@@ -12,7 +12,7 @@ export default function Home() {
       <div className="relative w-full h-[50vh] sm:h-[70vh]">
         {/* Background image */}
         <Image
-          src={`/union.jpg`}
+          src={`${basePath}/home/union.jpg`}
           alt="Who we are"
           layout="fill"
           objectFit="cover"
