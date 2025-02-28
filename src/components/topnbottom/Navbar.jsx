@@ -4,9 +4,13 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { Menu, X, Moon, Sun } from 'lucide-react';
 
+
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 
   const navigation = [
     { name: 'Home', href: '/' },
@@ -39,10 +43,10 @@ const Header = () => {
         {/* TODO: Edit height of the navbar here */}
         <div className="flex h-24 items-center justify-between">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-2">
+            <Link href={`${basePath}/`} className="flex items-center space-x-2">
               <div className="flex items-center space-x-4">
                 <img
-                  src="/cap_logo.jpg"
+                  src={`${basePath}/cap_logo.jpg`}
                   alt="Cap Logo"
                   className="h-16 w-16 object-contain rounded-full"
                 />
@@ -62,7 +66,7 @@ const Header = () => {
             {navigation.map((item) => (
               <Link
                 key={item.name}
-                href={item.href}
+                href={`${basePath}${item.href}`}
                 className="text-primary hover:text-muted-foreground transition-colors"
               >
                 {item.name}
