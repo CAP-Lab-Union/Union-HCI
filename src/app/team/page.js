@@ -40,7 +40,7 @@ const teamMembers = [
     {
         name: 'Luodi Wang',
         role: 'Research Assistant',
-        image: `${basePath}/team/luodi.jpg`,
+        image: `${basePath}/team/luodi.jpeg`,
         description: 'Software Developer',
     },
     {
@@ -54,6 +54,12 @@ const teamMembers = [
         role: 'Research Assistant',
         image: `${basePath}/team/ayanat.jpg`,
         description: 'Augmented Reality, 3D modeling',
+    },
+    {
+        name: 'Advitya Singh',
+        role: 'Research Assistant',
+        image: `${basePath}/team/advitya.png`,
+        description: 'User Interface Designer and Software Programmer',
     },
 ];
 
