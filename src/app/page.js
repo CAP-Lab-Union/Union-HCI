@@ -9,7 +9,7 @@ export default function Home() {
       <div className="relative w-full h-[50vh] sm:h-[70vh]">
         {/* Background image */}
         <Image
-          src="/union.jpg"
+          src="home/union.jpg"
           alt="Who we are"
           layout="fill"
           objectFit="cover"
