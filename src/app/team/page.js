@@ -58,7 +58,7 @@ const teamMembers = [
     {
         name: 'Advitya Singh',
         role: 'Research Assistant',
-        image: `${basePath}/team/advitya.png`,
+        image: `${basePath}/team/Advitya.png`,
         description: 'User Interface Designer and Software Programmer',
     },
 ];

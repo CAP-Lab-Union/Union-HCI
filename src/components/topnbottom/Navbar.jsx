@@ -46,7 +46,7 @@ const Header = () => {
             <Link href={`${basePath}/`} className="flex items-center space-x-2">
               <div className="flex items-center space-x-4">
                 <img
-                  src={`${basePath}/home/cap_logo.jpg`}
+                  src={`Union-HCI/home/cap_logo.jpg`} //change for localhost so that you can see logo. Have this for deploying
                   alt="Cap Logo"
                   className="h-16 w-16 object-contain rounded-full"
                 />

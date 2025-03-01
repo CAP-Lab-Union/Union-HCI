@@ -3,16 +3,13 @@
 import { TypeAnimation } from 'react-type-animation';
 import Image from 'next/image';
 
-const basePath = process.env.NODE_ENV === 'production' ? '/Union-HCI' : '';
-
 export default function Home() {
-
   return (
     <>
       <div className="relative w-full h-[50vh] sm:h-[70vh]">
         {/* Background image */}
         <Image
-          src={`${basePath}/home/union.jpg`}
+          src="/union.jpg"
           alt="Who we are"
           layout="fill"
           objectFit="cover"
@@ -25,7 +22,6 @@ export default function Home() {
           <h1 className="text-4xl sm:text-6xl text-white font-bold mb-4">
             Who We Are
           </h1>
-          {/* This is the typing animation */}
           <TypeAnimation
             sequence={['Innovators', 1000, 'Researchers', 1000, 'Designers', 1000]}
             speed={200}
