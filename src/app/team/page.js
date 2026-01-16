@@ -38,29 +38,18 @@ const teamMembers = [
         description: 'Developing Digital Immersive Experiences for Anxiety Relief through Data Visualization.',
     },
     {
-        name: 'Luodi Wang',
+        name: 'Syed Mahir Ahamed',
         role: 'Research Assistant',
-        image: `${basePath}/team/luodi.jpeg`,
-        description: 'Software Developer',
+        image: `${basePath}/team/placeholder.jpeg`,
+        description: 'AI vs Human Text.',
     },
     {
-        name: 'Natalie Pinto',
+        name: 'Ramissa Kahn',
         role: 'Research Assistant',
-        image: `${basePath}/team/Natalie.jpeg`,
-        description: 'Computer Science Major - ASL-Centric User Interfaces',
+        image: `${basePath}/team/placeholder.jpeg`,
+        description: 'AI vs Human Text.',
     },
-    {
-        name: 'Ayanat Zhumagaliyeva',
-        role: 'Research Assistant',
-        image: `${basePath}/team/ayanat.jpg`,
-        description: 'Augmented Reality, 3D modeling',
-    },
-    {
-        name: 'Advitya Singh',
-        role: 'Research Assistant',
-        image: `${basePath}/team/Advitya.png`,
-        description: 'User Interface Designer and Software Programmer',
-    },
+
 ];
 
 export default function TeamPage() {
