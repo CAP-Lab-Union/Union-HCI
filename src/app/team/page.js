@@ -32,7 +32,7 @@ const teamMembers = [
         description: 'Brain-Computer Interfaces & Computer Vision',
     },
     {
-        name: 'Ramissa Kahn',
+        name: 'Ramissa Khan',
         role: 'Research Assistant',
         image: `${basePath}/team/Ramissa.png`,
         description: 'Developing Digital Immersive Experiences for Anxiety Relief through Data Visualization.',
@@ -44,11 +44,19 @@ const teamMembers = [
         description: 'AI vs Human Text.',
     },
     {
-        name: 'Ramissa Kahn',
+        name: 'Shriya Biswas',
         role: 'Research Assistant',
         image: `${basePath}/team/placeholder.jpeg`,
         description: 'AI vs Human Text.',
     },
+    {
+        name: 'Ella Gillispie',
+        role: 'Research Assistant',
+        image: `${basePath}/team/placeholder.jpeg`,
+        description: 'Art and anxiety.',
+    },
+
+
 
 ];
 
